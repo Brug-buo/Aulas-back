@@ -6,7 +6,8 @@ for (let i = 1; i <= 5; i++) {
 }
 
 let media = soma / 5
-console.log(`Media final: ${media.toFixed(1)}`)
+console.log(`Media final: ${media(1)}`)
+
 
 if (media >= 7) {
     console.log("Status: Aprovado")

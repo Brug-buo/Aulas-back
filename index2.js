@@ -2,10 +2,10 @@ const input = require('readline-sync')
 let soma = 0
 for (let i = 1; i <= 5; i++) {
     let nota = Number(input.question(`Digite a nota ${i}: `))
-    soma = soma + nota; // Acumula a nota na variável soma
+    soma = soma + nota
 }
 
-let media = soma / 5;
+let media = soma / 5
 console.log(`Media final: ${media.toFixed(1)}`)
 
 if (media >= 7) {

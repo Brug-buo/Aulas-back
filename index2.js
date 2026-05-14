@@ -1,14 +1,22 @@
 const input = require('readline-sync');
 
-const num1 = Number(input.question('Digite o primeiro numero: '));
-const num2 = Number(input.question('Digite o segundo numero: '));
+let soma = 0;
 
-console.log(`Soma: ${num1 + num2}`);
-console.log(`Subtracao: ${num1 - num2}`);
-console.log(`Multiplicacao: ${num1 * num2}`);
+// O laço 'for' vai rodar 5 vezes (de 1 ate 5)
+for (let i = 1; i <= 5; i++) {
+    let nota = Number(input.question(`Digite a nota ${i}: `));
+    soma = soma + nota; // Acumula a nota na variável soma
+}
 
-if (num2 === 0) {
-    console.log("Erro: Não é possível dividir por zero.");
+let media = soma / 5;
+
+console.log(`Media final: ${media.toFixed(1)}`);
+
+// Lógica de aprovação
+if (media >= 7) {
+    console.log("Status: Aprovado");
+} else if (media >= 5) {
+    console.log("Status: Recuperacao");
 } else {
-    console.log(`Divisao: ${num1 / num2}`);
+    console.log("Status: Reprovado");
 }

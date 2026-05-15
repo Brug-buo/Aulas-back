@@ -1,4 +1,3 @@
-//exercicio 5
 const readline = require('readline-sync');
 
 let pares = 0;

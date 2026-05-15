@@ -5,7 +5,7 @@ let impares = 0;
 console.log("Digite 10 números inteiros:");
 
 for (let i = 1; i <= 10; i++) {
-    let numero = readline.questionInt(`Digite o ${i}o numero: );
+    let numero = readline.questionInt(`Digite o ${i}° número: );
 
     if (numero % 2 === 0) {
         pares++;

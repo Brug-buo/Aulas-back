@@ -1,4 +1,5 @@
 const readline = require('readline-sync');
+
 let pares = 0;
 let impares = 0;
 console.log("Digite 10 números inteiros:");

@@ -8,7 +8,7 @@ let media = soma / 5
 console.log(`Media final: ${media}`)
 
 if (media >= 7) {
-    console.log("Status: Aprovado")
+    console.log("Aprovado")
 } else if (media >= 5) {
     console.log("Recuperacao")
 } else {
